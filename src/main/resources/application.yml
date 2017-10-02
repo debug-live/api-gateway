@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: apigate
+
+zuul:
+  prefix: /api
+  routes:
+    device-service:
+      path: /device/**
+      url: http://localhost:8081
