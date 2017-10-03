@@ -7,4 +7,9 @@ zuul:
   routes:
     device-service:
       path: /device/**
-      url: http://localhost:8081
+      instanceId: http://device-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
